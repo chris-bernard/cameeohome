@@ -1,0 +1,326 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="MD-camera-photo.png">
+  <title>Cameeo</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="bower_components/sass-bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bower_components/sass-bootstrap/examples/carousel/carousel.css">
+  <link rel="stylesheet" href="styles/main.scss">
+  <link rel="stylesheet" href="styles/bootstrap-custom.scss">
+  <!-- endbuild -->
+  <script src="bower_components/modernizr/modernizr.js"></script>
+
+</head>
+<body>
+<!--[if lt IE 10]>
+<!--p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="navbar navbar-static-top navbar-no-margin">
+  <div class="container-fluid">
+
+    <!--http://www.bootply.com/76954-->
+    <div class="navbar-collapse collapse">
+      <!--<img src="images/logo_cameeo.jpg" alt="logo_cameeo" width="241" height="84" vspace="6" align="middle"/>-->
+      <a class="navbar-brand" href="#">
+        <img src="images/logo_cameeo.jpg" alt="logo_cameeo" width="241" height="84"/>
+      </a>
+      <span class="tagline"><h1>Buy & sell in a wrinck</h1></span>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#sell" class="btn btn-info btn-lg">Sell</a></li>
+        <li><a href="#signin" class="btn btn-link btn-lg">Sign in</a></li>
+        <li><a href="#sign up" class="btn btn-link btn-lg">Sign up</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="navbar-collapse collapse navbar-menu">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="#dslr" class="dropdown-toggle" data-toggle="dropdown">Boîtiers numériques</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Canon</a></li>
+            <li><a href="#">Nikon</a></li>
+            <li><a href="#">Tous</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#slr" class="dropdown-toggle" data-toggle="dropdown">Boîtiers argentiques</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Canon</a></li>
+            <li><a href="#">Nikon</a></li>
+            <li><a href="#">Tous</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#lenses" class="dropdown-toggle" data-toggle="dropdown">Optiques</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Canon</a></li>
+            <li><a href="#">Nikon</a></li>
+            <li><a href="#">Tous</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#contact" class="dropdown-toggle" data-toggle="dropdown">Flashs</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Canon</a></li>
+            <li><a href="#">Nikon</a></li>
+            <li><a href="#">Tous</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#contact" class="dropdown-toggle" data-toggle="dropdown">Tous</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Canon</a></li>
+            <li><a href="#">Nikon</a></li>
+            <li><a href="#">Tous</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="http://lorempixel.com/1200/500/nature" alt="First slide">
+
+      <div class="container">
+        <div class="carousel-caption">
+          <p><a href="#">Annonce Alpha</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://lorempixel.com/1200/500/people" alt="Second slide">
+
+      <div class="container">
+        <div class="carousel-caption">
+          <p><a href="#">Picture Beta</a> from <a href="#">Tinmar</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://lorempixel.com/1200/500/sports" alt="Third slide">
+
+      <div class="container">
+        <div class="carousel-caption">
+          <p><a href="#">News Gamma</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://lorempixel.com/1200/500/city" alt="Fourth slide">
+
+      <div class="container">
+        <div class="carousel-caption">
+          <p><a href="#">News Lambda</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span
+    class="glyphicon glyphicon-chevron-left"></span></a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next"><span
+    class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+<!-- /.carousel -->
+
+<div class="container">
+
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+    <div class="col-lg-4">
+      <h2>Annonces</h2>
+
+      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+        vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
+        magna.</p>
+
+      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+    </div>
+    <!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+      <h2>Galeries</h2>
+
+      <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
+        mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+        condimentum nibh.</p>
+
+      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+    </div>
+    <!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+      <h2>Articles</h2>
+
+      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
+        felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+        massa justo sit amet risus.</p>
+
+      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+    </div>
+    <!-- /.col-lg-4 -->
+  </div>
+  <!-- /.row -->
+
+</div>
+
+<div class='container main-container'>
+  <div id="grid" class="row">
+  </div>
+</div>
+
+<footer>
+  <!--<p class="pull-right"><a href="#">Back to top</a></p>-->
+  <!--<p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>-->
+
+  <!--<div class="container-fluid">-->
+  <div class="row">
+    <div class="col-xs-3 bs-exemple">
+      <strong>Faire</strong>
+      <ul class="list-unstyled">
+        <li><a href="#">Acheter</a></li>
+        <li><a href="#">Vendre</a></li>
+        <li><a href="#">Chercher une référence</a></li>
+        <li><a href="#">Soumettre un article</a></li>
+        <li><a href="#">Signaler référence manquante ?</a></li>
+      </ul>
+    </div>
+    <div class="col-xs-3">
+      <strong>Apprendre</strong>
+      <ul class="list-unstyled">
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#guides">Guides</a></li>
+        <li><a href="#faq">F.A.Q.</a></li>
+      </ul>
+    </div>
+    <div class="col-xs-3">
+      <strong>Savoir</strong>
+      <ul class="list-unstyled">
+        <li><a href="#about">A propos</a></li>
+        <li><a href="#condition">Conditions générales</a></li>
+        <li><a href="#team">L'équipe</a></li>
+      </ul>
+    </div>
+    <div class="col-xs-3">
+      <strong>Communiquer</strong>
+      <ul class="list-unstyled">
+        <li><a href="#pro">Contacts professionels</a></li>
+        <li><a href="#community">Contacts particuliers</a></li>
+        <li><a href="#hr">On recrute !</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--</div>-->
+</footer>
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/jquery.js"></script>
+<script type="text/javascript" src="bower_components/infinity/infinity.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<!--script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+</script-->
+
+<!-- build:js scripts/plugins.js -->
+<script src="bower_components/sass-bootstrap/js/affix.js"></script>
+<script src="bower_components/sass-bootstrap/js/alert.js"></script>
+<script src="bower_components/sass-bootstrap/js/dropdown.js"></script>
+<script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
+<script src="bower_components/sass-bootstrap/js/modal.js"></script>
+<script src="bower_components/sass-bootstrap/js/transition.js"></script>
+<script src="bower_components/sass-bootstrap/js/button.js"></script>
+<script src="bower_components/sass-bootstrap/js/popover.js"></script>
+<script src="bower_components/sass-bootstrap/js/carousel.js"></script>
+<script src="bower_components/sass-bootstrap/js/scrollspy.js"></script>
+<script src="bower_components/sass-bootstrap/js/collapse.js"></script>
+<script src="bower_components/sass-bootstrap/js/tab.js"></script>
+<script src="bower_components/sass-bootstrap/docs-assets/js/holder.js"></script>
+<!-- endbuild -->
+
+<!-- build:js({app,.tmp}) scripts/main.js -->
+<script src="scripts/main.js"></script>
+<script type=text/javascript>
+
+  var $el = $('#grid');
+  var listView = new infinity.ListView($el
+    // , {lazy: function(jqueryContext) { console.log(jqueryContext); } }
+  );
+
+  // ... When adding new content:
+
+  var template = "<div class='col-md-3'><div class='grid-item' style='margin: 5px 5px;'>%CONTENT%</div></div>";
+  var template2 = "<div class='col-md-3'>%CONTENT%</div>";
+
+  var cnt;
+  for (cnt = 0; cnt < 8; cnt++) {
+    var picture = '<img src="http://lorempixel.com/200/200/people/%cnt%" alt="img">';
+    picture = picture.replace("%cnt%", cnt % 8);
+    var res = template.replace("%CONTENT%", picture);
+    listView.append($(res));
+  }
+  for (cnt = 0; cnt < 8; cnt++) {
+    var picture = '<img src="http://lorempixel.com/200/200/city/%cnt%" alt="img">';
+    picture = picture.replace("%cnt%", cnt % 8);
+    var res = template.replace("%CONTENT%", picture);
+    listView.append($(res));
+  }
+  for (cnt = 0; cnt < 8; cnt++) {
+    var picture = '<img src="http://lorempixel.com/200/200/technics/%cnt%" alt="img">';
+    picture = picture.replace("%cnt%", cnt % 8);
+    var res = template.replace("%CONTENT%", picture);
+    listView.append($(res));
+  }
+  for (cnt = 0; cnt < 8; cnt++) {
+    var picture = '<img src="http://lorempixel.com/200/200/nightlife/%cnt%" alt="img">';
+    picture = picture.replace("%cnt%", cnt % 8);
+    var res = template.replace("%CONTENT%", picture);
+    listView.append($(res));
+  }
+
+  var more = '<div class="col-md-12"><a href="#more">More</a></div>';
+  //  listView.append($(more));
+
+</script>
+
+<!-- endbuild -->
+</body>
+</html>
