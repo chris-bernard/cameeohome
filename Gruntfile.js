@@ -199,7 +199,8 @@ module.exports = function (grunt) {
                         '<%= yeoman.dist %>/scripts/{,*/}*.js',
                         '<%= yeoman.dist %>/styles/{,*/}*.css',
                         '<%= yeoman.dist %>/images/{,*/}*.{gif,jpeg,jpg,png,webp}',
-                        '<%= yeoman.dist %>/styles/fonts/{,*/}*.*'
+                        '<%= yeoman.dist %>/styles/fonts/{,*/}*.*',
+                        '<%= yeoman.dist %>/bower_component/sass-bootstrap/fonts/{,*/}*.{svg,eot,ttf,woff}'
                     ]
                 }
             }
@@ -306,7 +307,7 @@ module.exports = function (grunt) {
                         'images/{,*/}*.webp',
                         '{,*/}*.html',
                         'styles/fonts/{,*/}*.*',
-                        'bower_components/' + (this.includeCompass ? 'sass-' : '') + 'bootstrap/' + (this.includeCompass ? 'fonts/' : 'dist/fonts/') +'*.*'
+                        'bower_components/sass-bootstrap/fonts/*.*'
                     ]
                 }]
             },
@@ -316,6 +317,13 @@ module.exports = function (grunt) {
                 cwd: '<%= yeoman.app %>/styles',
                 dest: '.tmp/styles/',
                 src: '{,*/}*.{css,scss}'
+            },
+            fonts: {
+              expand: true,
+              dot: true,
+              cwd: '<%= yeoman.app %>/bower_components/sass-bootstrap/fonts/',
+              dest: '<%= yeoman.dist %>/fonts',
+              src: '*.{svg,eot,ttf,woff}'
             }
         },
 
@@ -337,14 +345,17 @@ module.exports = function (grunt) {
         concurrent: {
             server: [
                 'compass:server',
-                'copy:styles'
+                'copy:styles',
+                'copy:fonts'
             ],
             test: [
-                'copy:styles'
+                'copy:styles',
+                'copy:fonts'
             ],
             dist: [
                 'compass',
                 'copy:styles',
+                'copy:fonts',
                 'imagemin',
                 'svgmin'
             ]

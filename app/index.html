@@ -18,14 +18,17 @@
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
   <link rel="stylesheet" href="bower_components/sass-bootstrap/dist/css/bootstrap.css">
-  <!--<link rel="stylesheet" href="bower_components/sass-bootstrap/examples/carousel/carousel.css">-->
   <!-- endbower -->
   <!-- endbuild -->
 
   <!-- build:css(.tmp) styles/main.css -->
-  <!--<link rel="stylesheet" href="styles/bootstrap-custom.css">-->
+  <link rel="stylesheet" href="styles/bootstrap-custom.css">
+  <!-- endbuild -->
+
+  <!-- build:scss(.tmp) styles/main.scss -->
   <link rel="stylesheet" href="styles/main.scss">
   <!-- endbuild -->
+
   <script src="bower_components/modernizr/modernizr.js"></script>
 
 </head>
@@ -43,7 +46,7 @@
       <a class="navbar-brand" href="#">
         <img src="images/logo_cameeo.jpg" alt="logo_cameeo" width="241" height="84"/>
       </a>
-      <span class="tagline"><h1>Buy & sell in a wrinck</h1></span>
+      <span class="tagline"><h1 class="myFont">Buy & sell in a wrinck</h1></span>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#sell" class="btn btn-info btn-lg">Sell</a></li>
         <li><a href="#signin" class="btn btn-link btn-lg">Sign in</a></li>
@@ -112,7 +115,7 @@
   </ol>
   <div class="carousel-inner">
     <div class="item active">
-      <img src="http://lorempixel.com/1200/500/nature" alt="First slide">
+      <img src="http://lorempixel.com/1200/400/nature" class="img-responsive" alt="First slide">
 
       <div class="container">
         <div class="carousel-caption">
@@ -121,7 +124,7 @@
       </div>
     </div>
     <div class="item">
-      <img src="http://lorempixel.com/1200/500/people" alt="Second slide">
+      <img src="http://lorempixel.com/1200/400/people" alt="Second slide">
 
       <div class="container">
         <div class="carousel-caption">
@@ -130,7 +133,7 @@
       </div>
     </div>
     <div class="item">
-      <img src="http://lorempixel.com/1200/500/sports" alt="Third slide">
+      <img src="http://lorempixel.com/1200/400/sports" alt="Third slide">
 
       <div class="container">
         <div class="carousel-caption">
@@ -139,7 +142,7 @@
       </div>
     </div>
     <div class="item">
-      <img src="http://lorempixel.com/1200/500/city" alt="Fourth slide">
+      <img src="http://lorempixel.com/1200/400/city" alt="Fourth slide">
 
       <div class="container">
         <div class="carousel-caption">
@@ -148,10 +151,12 @@
       </div>
     </div>
   </div>
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span
-    class="glyphicon glyphicon-chevron-left"></span></a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next"><span
-    class="glyphicon glyphicon-chevron-right"></span></a>
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
 </div>
 <!-- /.carousel -->
 
