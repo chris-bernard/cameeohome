@@ -10,11 +10,12 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <link rel="shortcut icon" href="MD-camera-photo.png">
   <title>Cameeo</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
   <link rel="stylesheet" href="bower_components/sass-bootstrap/dist/css/bootstrap.css">
@@ -25,9 +26,7 @@
   <link rel="stylesheet" href="styles/bootstrap-custom.css">
   <!-- endbuild -->
 
-  <!-- build:scss(.tmp) styles/main.scss -->
   <link rel="stylesheet" href="styles/main.scss">
-  <!-- endbuild -->
 
   <script src="bower_components/modernizr/modernizr.js"></script>
 
@@ -37,167 +36,188 @@
 <!--p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<div class="navbar navbar-static-top navbar-no-margin">
+<nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
-
-    <!--http://www.bootply.com/76954-->
-    <div class="navbar-collapse collapse">
-      <!--<img src="images/logo_cameeo.jpg" alt="logo_cameeo" width="241" height="84" vspace="6" align="middle"/>-->
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
       <a class="navbar-brand" href="#">
         <img src="images/logo_cameeo.jpg" alt="logo_cameeo" width="241" height="84"/>
       </a>
-      <span class="tagline"><h1 class="myFont">Buy & sell in a wrinck</h1></span>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#sell" class="btn btn-info btn-lg">Sell</a></li>
-        <li><a href="#signin" class="btn btn-link btn-lg">Sign in</a></li>
-        <li><a href="#sign up" class="btn btn-link btn-lg">Sign up</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="container">
-    <div class="navbar-collapse collapse navbar-menu">
-      <ul class="nav navbar-nav">
-        <li>
-          <a href="#dslr" class="dropdown-toggle" data-toggle="dropdown">Boîtiers numériques</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Canon</a></li>
-            <li><a href="#">Nikon</a></li>
-            <li><a href="#">Tous</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#slr" class="dropdown-toggle" data-toggle="dropdown">Boîtiers argentiques</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Canon</a></li>
-            <li><a href="#">Nikon</a></li>
-            <li><a href="#">Tous</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#lenses" class="dropdown-toggle" data-toggle="dropdown">Optiques</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Canon</a></li>
-            <li><a href="#">Nikon</a></li>
-            <li><a href="#">Tous</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#contact" class="dropdown-toggle" data-toggle="dropdown">Flashs</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Canon</a></li>
-            <li><a href="#">Nikon</a></li>
-            <li><a href="#">Tous</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#contact" class="dropdown-toggle" data-toggle="dropdown">Tous</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Canon</a></li>
-            <li><a href="#">Nikon</a></li>
-            <li><a href="#">Tous</a></li>
-          </ul>
-        </li>
-      </ul>
+      <!--<p class="navbar-text">Buy & sell in a wrinck</p>-->
     </div>
 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><button type="button" class="btn btn-info btn-lg navbar-btn">Sell</button></li>
+        <li><button type="button" class="btn btn-info btn-lg navbar-btn">Buy</button></li>
+        <li><button type="button" class="btn btn-info btn-lg navbar-btn">Sign in</button></li>
+        <li><button type="button" class="btn btn-info btn-lg navbar-btn">Sign up</button></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<nav class="navbar navbar-menu" role="navigation">
+  <div class="container">
+    <ul class="nav navbar-nav nav-pills">
+      <li>
+        <a href="#dslr" class="dropdown-toggle" data-toggle="dropdown">Boîtiers numériques</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Canon</a></li>
+          <li><a href="#">Nikon</a></li>
+          <li><a href="#">Tous</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#slr" class="dropdown-toggle" data-toggle="dropdown">Boîtiers argentiques</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Canon</a></li>
+          <li><a href="#">Nikon</a></li>
+          <li><a href="#">Tous</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#lenses" class="dropdown-toggle" data-toggle="dropdown">Optiques</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Canon</a></li>
+          <li><a href="#">Nikon</a></li>
+          <li><a href="#">Tous</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#contact" class="dropdown-toggle" data-toggle="dropdown">Flashs</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Canon</a></li>
+          <li><a href="#">Nikon</a></li>
+          <li><a href="#">Tous</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#contact" class="dropdown-toggle" data-toggle="dropdown">Tous</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Canon</a></li>
+          <li><a href="#">Nikon</a></li>
+          <li><a href="#">Tous</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search a reference">
+          </div>
+          <button type="submit" class="btn btn-default">
+            <span class="glyphicon glyphicon-search"></span> Submit
+          </button>
+        </form>
+      </li>
+    </ul>
   </div>
-</div>
+</nav>
 
 <!-- Carousel
 ================================================== -->
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="http://lorempixel.com/1200/400/nature" class="img-responsive" alt="First slide">
+<!--<div id="myCarousel" class="carousel slide" data-ride="carousel">-->
+  <!--&lt;!&ndash; Indicators &ndash;&gt;-->
+  <!--<ol class="carousel-indicators">-->
+    <!--<li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
+    <!--<li data-target="#myCarousel" data-slide-to="1"></li>-->
+    <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
+    <!--<li data-target="#myCarousel" data-slide-to="3"></li>-->
+  <!--</ol>-->
+  <!--<div class="carousel-inner">-->
+    <!--<div class="item active">-->
+      <!--<img src="http://lorempixel.com/1200/400/nature" class="img-responsive" alt="First slide">-->
 
-      <div class="container">
-        <div class="carousel-caption">
-          <p><a href="#">Annonce Alpha</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <img src="http://lorempixel.com/1200/400/people" alt="Second slide">
+      <!--<div class="container">-->
+        <!--<div class="carousel-caption">-->
+          <!--<p><a href="#">Annonce Alpha</a></p>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div class="item">-->
+      <!--<img src="http://lorempixel.com/1200/400/people" alt="Second slide">-->
 
-      <div class="container">
-        <div class="carousel-caption">
-          <p><a href="#">Picture Beta</a> from <a href="#">Tinmar</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <img src="http://lorempixel.com/1200/400/sports" alt="Third slide">
+      <!--<div class="container">-->
+        <!--<div class="carousel-caption">-->
+          <!--<p><a href="#">Picture Beta</a> from <a href="#">Tinmar</a></p>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div class="item">-->
+      <!--<img src="http://lorempixel.com/1200/400/sports" alt="Third slide">-->
 
-      <div class="container">
-        <div class="carousel-caption">
-          <p><a href="#">News Gamma</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <img src="http://lorempixel.com/1200/400/city" alt="Fourth slide">
+      <!--<div class="container">-->
+        <!--<div class="carousel-caption">-->
+          <!--<p><a href="#">News Gamma</a></p>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div class="item">-->
+      <!--<img src="http://lorempixel.com/1200/400/city" alt="Fourth slide">-->
 
-      <div class="container">
-        <div class="carousel-caption">
-          <p><a href="#">News Lambda</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-</div>
-<!-- /.carousel -->
+      <!--<div class="container">-->
+        <!--<div class="carousel-caption">-->
+          <!--<p><a href="#">News Lambda</a></p>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+  <!--<a class="left carousel-control" href="#myCarousel" data-slide="prev">-->
+    <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
+  <!--</a>-->
+  <!--<a class="right carousel-control" href="#myCarousel" data-slide="next">-->
+    <!--<span class="glyphicon glyphicon-chevron-right"></span>-->
+  <!--</a>-->
+<!--</div>-->
+<!--&lt;!&ndash; /.carousel &ndash;&gt;-->
 
-<div class="container">
+<!--<div class="container">-->
 
-  <!-- Three columns of text below the carousel -->
-  <div class="row">
-    <div class="col-lg-4">
-      <h2>Annonces</h2>
+  <!--&lt;!&ndash; Three columns of text below the carousel &ndash;&gt;-->
+  <!--<div class="row">-->
+    <!--<div class="col-lg-4">-->
+      <!--<h2>Annonces</h2>-->
 
-      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
-        vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
-        magna.</p>
+      <!--<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies-->
+        <!--vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus-->
+        <!--magna.</p>-->
 
-      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-    </div>
-    <!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <h2>Galeries</h2>
+      <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+    <!--</div>-->
+    <!--&lt;!&ndash; /.col-lg-4 &ndash;&gt;-->
+    <!--<div class="col-lg-4">-->
+      <!--<h2>Galeries</h2>-->
 
-      <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
-        mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-        condimentum nibh.</p>
+      <!--<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras-->
+        <!--mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris-->
+        <!--condimentum nibh.</p>-->
 
-      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-    </div>
-    <!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <h2>Articles</h2>
+      <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+    <!--</div>-->
+    <!--&lt;!&ndash; /.col-lg-4 &ndash;&gt;-->
+    <!--<div class="col-lg-4">-->
+      <!--<h2>Articles</h2>-->
 
-      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
-        felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
-        massa justo sit amet risus.</p>
+      <!--<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta-->
+        <!--felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum-->
+        <!--massa justo sit amet risus.</p>-->
 
-      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-    </div>
-    <!-- /.col-lg-4 -->
-  </div>
-  <!-- /.row -->
+      <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+    <!--</div>-->
+    <!--&lt;!&ndash; /.col-lg-4 &ndash;&gt;-->
+  <!--</div>-->
+  <!--&lt;!&ndash; /.row &ndash;&gt;-->
 
-</div>
+<!--</div>-->
 
 <div class='container main-container'>
   <div id="grid" class="row">
@@ -208,8 +228,8 @@
   <!--<p class="pull-right"><a href="#">Back to top</a></p>-->
   <!--<p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>-->
 
-  <!--<div class="container-fluid">-->
-  <div class="row">
+  <div class="container">
+  <div class="row footer">
     <div class="col-xs-3 bs-exemple">
       <strong>Faire</strong>
       <ul class="list-unstyled">
@@ -239,13 +259,13 @@
     <div class="col-xs-3">
       <strong>Communiquer</strong>
       <ul class="list-unstyled">
-        <li><a href="#pro">Contacts professionels</a></li>
-        <li><a href="#community">Contacts particuliers</a></li>
+        <li><a href="#pro">Professionnels</a></li>
+        <li><a href="#community">Particuliers</a></li>
         <li><a href="#hr">On recrute !</a></li>
       </ul>
     </div>
   </div>
-  <!--</div>-->
+  </div>
 </footer>
 
 <!-- build:js scripts/vendor.js -->

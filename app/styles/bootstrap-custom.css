@@ -2,6 +2,10 @@
   margin: 0 0 0 0;
 }
 
+.navbar-nav > li {
+    padding-right: 0.3em;
+}
+
 .carousel-control {
   width: 10%;
   opacity: 0.25;
@@ -12,4 +16,25 @@
 .carousel-inner > .item > img {
   margin-left: auto;
   margin-right: auto;
+}
+
+.tagline {
+    position: absolute;
+    padding-top: 40px;
+    color: darkred;
+}
+
+.navbar-menu {
+    border-top: 1px solid red;
+}
+
+.navbar-menu .navbar-nav > li > a {
+    font-weight: bold;
+    color: #8b0000;
+}
+
+footer {
+    background-image: url('../images/iPadBackgroundTexture-grey.png');
+    background-repeat: repeat;
+    padding: 10px 0 10px 0;
 }

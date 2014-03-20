@@ -10,3 +10,5 @@ test/bower_components
 .idea
 *.iml
 atlassian-ide-plugin.xml
+
+*.zip

@@ -197,7 +197,7 @@ module.exports = function (grunt) {
                 files: {
                     src: [
                         '<%= yeoman.dist %>/scripts/{,*/}*.js',
-                        '<%= yeoman.dist %>/styles/{,*/}*.css',
+                        '<%= yeoman.dist %>/styles/{,*/}*.{css,scss}',
                         '<%= yeoman.dist %>/images/{,*/}*.{gif,jpeg,jpg,png,webp}',
                         '<%= yeoman.dist %>/styles/fonts/{,*/}*.*',
                         '<%= yeoman.dist %>/bower_component/sass-bootstrap/fonts/{,*/}*.{svg,eot,ttf,woff}'
@@ -222,7 +222,7 @@ module.exports = function (grunt) {
                 assetsDirs: ['<%= yeoman.dist %>']
             },
             html: ['<%= yeoman.dist %>/{,*/}*.html'],
-            css: ['<%= yeoman.dist %>/styles/{,*/}*.css']
+            css: ['<%= yeoman.dist %>/styles/{,*/}*.{css,scss}']
         },
 
         // The following *-min tasks produce minified files in the dist folder
@@ -270,16 +270,16 @@ module.exports = function (grunt) {
         // By default, your `index.html`'s <!-- Usemin block --> will take care of
         // minification. These next options are pre-configured if you do not wish
         // to use the Usemin blocks.
-        // cssmin: {
-        //     dist: {
-        //         files: {
-        //             '<%= yeoman.dist %>/styles/main.css': [
-        //                 '.tmp/styles/{,*/}*.css',
-        //                 '<%= yeoman.app %>/styles/{,*/}*.css'
-        //             ]
-        //         }
-        //     }
-        // },
+        cssmin: {
+             dist: {
+                 files: {
+                     '<%= yeoman.dist %>/styles/main.scss': [
+                         '.tmp/styles/{,*/}*.scss',
+                         '<%= yeoman.app %>/styles/{,*/}*.scss'
+                     ]
+                 }
+             }
+        },
         // uglify: {
         //     dist: {
         //         files: {
@@ -292,6 +292,11 @@ module.exports = function (grunt) {
         // concat: {
         //     dist: {}
         // },
+//        concat: { 'dist/styles/main.css':
+//          [ '.tmp/styles/bootstrap-custom.css',
+//            '.tmp/styles/main.css',
+//            '.tmp/styles/main.scss' ]
+//        },
 
         // Copies remaining files to places other tasks can use
         copy: {
